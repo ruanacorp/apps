@@ -1,4 +1,4 @@
-# Site da Ruana Corp
+# Site da Ruana Corp 
 
 Conteúdo de https://ruanacorp.github.io/apps/ (GitHub Pages do repositório
 ruanacorp/apps). HTML estático, sem scripts, cookies nem rastreamento.
