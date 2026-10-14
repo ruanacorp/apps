@@ -1,0 +1,42 @@
+name: Suporte
+description: Pedir ajuda, relatar um problema ou sugerir algo
+title: "[Suporte] "
+labels: ["suporte"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Issues são públicas. **Não envie fotos de notas, nomes de pessoas, CPF nem valores da sua conta.**
+  - type: dropdown
+    id: app
+    attributes:
+      label: App
+      options:
+        - Passa a Régua
+    validations:
+      required: true
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo
+      options:
+        - Bug
+        - Sugestão
+        - Privacidade
+        - Outro
+    validations:
+      required: true
+  - type: textarea
+    id: descricao
+    attributes:
+      label: Descrição
+      description: O que aconteceu? Se for bug, inclua o modelo do celular e a versão do Android.
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacidade
+    attributes:
+      label: Aviso de privacidade
+      options:
+        - label: Não incluí fotos de notas nem dados pessoais
+          required: true
